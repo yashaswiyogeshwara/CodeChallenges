@@ -24,4 +24,4 @@ function checkSum(array) {
   return 'FAILED';
 }
 
-console.log("TESTCASE" + " " +checkSum(arr));
+console.log("TESTCASE:" + " " +checkSum(arr));
