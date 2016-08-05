@@ -13,15 +13,15 @@ function checkSum(array) {
   for (var i = 0; i < arr.length - 1; i++) {
     tempSumFirst += Number(arr[i]);
     tempSumLast += Number(arr[arr.length - i]);
-    var result = (tempSumFirst == sum - Number(arr[i + 1]) - tempSumFirst) ? 'Passed' : 'Failed';
-    var resultEnd = (tempSumLast == sum - Number(arr[arr.length - (i + 1)]) - tempSumFirst) ? 'Passed' : 'Failed';
-    if (result == 'Passed' || resultEnd == 'Passed') {
-      return 'Passed';
+    var result = (tempSumFirst == sum - Number(arr[i + 1]) - tempSumFirst) ? 'PASSED' : 'FAILED';
+    var resultEnd = (tempSumLast == sum - Number(arr[arr.length - (i + 1)]) - tempSumFirst) ? 'PASSED' : 'FAILED';
+    if (result == 'PASSED' || resultEnd == 'PASSED') {
+      return 'PASSED';
     } else {
       continue;
     }
   }
-  return 'Failed';
+  return 'FAILED';
 }
 
-console.log(checkSum(arr));
+console.log("TESTCASE" + " " +checkSum(arr));
